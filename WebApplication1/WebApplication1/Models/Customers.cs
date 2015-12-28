@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace WebApplication1.Models
 {
-    public class Customers
+    public class Customer
     {
-        public int ProductId { get; set; }
+        public int CustomerId { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -17,7 +18,7 @@ namespace WebApplication1.Models
         public int Price { get; set; }
 
         //Navigation Property
-        public ICollection<orders> Orders { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
-</review>
+
 }

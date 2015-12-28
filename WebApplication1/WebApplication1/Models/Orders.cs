@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,9 +8,9 @@ namespace WebApplication1.Models
 {
     public class Order
     {
-        public int ReviewId { get; set; }
+        public int OrderId { get; set; }
 
-        public int ProductId { get; set; }
+        public int CustomerId { get; set; }
 
         [Required]
         public string Title { get; set; }
@@ -17,6 +18,6 @@ namespace WebApplication1.Models
         public string Description { get; set; }
 
         //Navigation Property
-        public Customers Customers { get; set; }
+        public Customer Customer { get; set; }
     }
 }
