@@ -61,3 +61,5 @@ C:\Users\Callie\Documents\GitHub\Csharp-EntityFramework-WebApi-Project\WebApplic
 C:\Users\Callie\Documents\GitHub\Csharp-EntityFramework-WebApi-Project\WebApplication1\WebApplication1\bin\System.Web.Http.Owin.xml
 C:\Users\Callie\Documents\GitHub\Csharp-EntityFramework-WebApi-Project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Callie\Documents\GitHub\Csharp-EntityFramework-WebApi-Project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Callie\Documents\GitHub\Csharp-EntityFramework-WebApi-Project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.Initial.resources
+C:\Users\Callie\Documents\GitHub\Csharp-EntityFramework-WebApi-Project\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
