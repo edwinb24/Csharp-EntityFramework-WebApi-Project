@@ -17,10 +17,25 @@ namespace WebApplication1.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/Customers
-        public IQueryable<Customer> GetCustomers()
+        //public IQueryable<Customer> GetCustomers()
+        //{
+            //return db.Customers;
+        //    return db.Customers.Include(p => p.Orders);
+        //}
+
+        //ADDING CODE HERE
+        public IList<CustomerDetailsDto> GetCustomers()
         {
-            return db.Customers;
+            return db.Customers.Select(p => new CustomerDetailsDto
+            {
+                Name = p.Name,
+                Category = p.Category,
+                Price = p.Price,
+                Orders = p.Orders.ToList()
+            }).ToList();
         }
+        //End of addition
+
 
         // GET: api/Customers/5
         [ResponseType(typeof(Customer))]
